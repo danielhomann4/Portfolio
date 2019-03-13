@@ -1,74 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parallax Template - Materialize</title>
+
+    <!-- CSS  -->
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <title>Portfolio</title>
+    <link
+      href="./css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="./css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
   </head>
   <body>
-    <div class="contanier">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Portfolio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
-              <a class="nav-item nav-link" href="#project">Projects</a>
-              <a class="nav-item nav-link" href="#contact">Contact</a>
-            </div>
-          </div>
-        </nav>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Portfolio</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
       </div>
-      <div class="row">
-        <div class="jumbotron-fluid">
-          <div class="container-fluid">
-            <h1 class="display-4">Hello, My Name is Daniel Homann</h1>
-            <hr class="my-4" />
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br /><br />
+          <h1 class="header center teal-text text-lighten-2">Daniel Homann</h1>
+          <div class="row center">
+            <h5 class="header col s12 light">
+              This is my website and I have made it to display the skills I have
+              learned in the UCI Coding Bootcamp.
+            </h5>
           </div>
         </div>
       </div>
-      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <h2 id="project">Projects</h2>
-        <p></p>
-        <h2 id="contact">Contact Me</h2>
-        <p></p>
+      <div class="parallax">
+        <img src="background1.jpg" alt="Unsplashed background img 1" />
       </div>
     </div>
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">shutter_speed</i>
+              </h2>
+              <h5 class="center">Problem Solving</h5>
+
+              <p class="light">
+                Problem solving is one of my top skills I bring to my jobs. I am
+                able to solve complex issues and remember how I made it work for
+                the next time.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">create</i>
+              </h2>
+              <h5 class="center">Focused and Driven</h5>
+
+              <p class="light">
+                I combine being focused and driven because I beleive they go
+                together. They are both two of my top skills because I am able
+                to lock in on a task and not get distracted until I finish what
+                I had started.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">Easy to Work With</h5>
+
+              <p class="light">
+                Everywhere I have worked I have been able to work with my
+                coworkers in peace, I have never had a problem with any of them.
+                I am also very easy going and able to adjust on the fly, and
+                take criticism without being offended.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper" id="projects">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header center light text-lighten-2">Projects</h1>
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="background2.jpg" alt="Unsplashed background img 2" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">airplanemode_active</i>
+              </h2>
+              <h5 class="center">Project-1</h5>
+
+              <p class="light">
+                For my first project my group made a travel website where you
+                can go anywhere in the world and plan your vacation.
+              </p>
+              <a href="https://danielhomann4.github.io/Project-1/index.html"
+                ><p>Click Here</p></a
+              >
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">pets</i>
+              </h2>
+              <h5 class="center">Project-2</h5>
+              <p class="light">
+                For my second project my group made a website where dog owners
+                could plan dog meet ups with people in the surrounding area.
+              </p>
+              <a href=" https://immense-savannah-15503.herokuapp.com/"
+                ><p>Click Here</p></a
+              >
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text">
+                <i class="material-icons">code</i>
+              </h2>
+              <h5 class="center">GitHub</h5>
+              <p class="light">
+                My third project will be coming soon this April! But for now,
+                here is my GitHub page. Make Sure to check it out.
+              </p>
+              <a href="https://github.com/danielhomann4"><p>Click Here</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper" id="contact">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header col s12 light">
+              Contact
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="background3.jpg" alt="Unsplashed background img 3" />
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <h2 class="center brown-text">
+                  <i class="material-icons">language</i>
+                </h2>
+                <h5 class="center">Linked In</h5>
+  
+                <p class="light">
+                  Here is a link to my Linked In page. Make sure to checkout it out.
+                </p>
+                <a href="https://www.linkedin.com/in/daniel-homann-1b794b165/"
+                  ><p>Click Here</p></a
+                >
+              </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="icon-block">
+                  <h2 class="center brown-text">
+                    <i class="material-icons">email</i>
+                  </h2>
+                  <h5 class="center">E-Mail</h5>
+    
+                  <p class="light">
+                    Here is my email if you want to contact me, danielhomann4@gmail.com.
+                  </p>
+                  <a href="mailto:danielhomann4@gmail.com?subject=Portfolio">Send Email</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="page-footer teal">
+      <!-- <div class="footer-copyright"> -->
+        <div class="container">
+          Made by Daniel Homann
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/init.js"></script>
   </body>
 </html>
